@@ -22,7 +22,7 @@ int main() {
 
   FILE *fptr;
 
-  fptr = fopen("cadastro.csv", "r");
+  fptr = fopen("cadastro.csv", "w+");
   if( fptr == NULL){
       printf("Erro na criacao ou abertura do ficheiro!");
       exit(1);
