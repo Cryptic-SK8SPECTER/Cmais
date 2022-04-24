@@ -9,20 +9,20 @@ typedef struct{
   int idade;
 } Pessoa;
 
- int i,n;
- char n1, *linha;
 //funcoes/procedimentos
 void menu();
 void mostrar();
 Pessoa ler_dados();
 
 int main() {
-
+  int i,n;
+  char n1, *linha;
+  
   Pessoa p1;
 
   FILE *fptr;
 
-  fptr = fopen("cadastro.csv", "r");
+  fptr = fopen("cadastro.csv", "w+");
   if( fptr == NULL){
       printf("Erro na criacao ou abertura do ficheiro!");
       exit(1);
